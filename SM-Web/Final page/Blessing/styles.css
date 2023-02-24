@@ -1,0 +1,19 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: lightcoral;
+}
+.blessing-text {
+    padding: 3rem;
+    margin: 2rem 3rem;
+   min-height: 80vh;
+}
+
+
+footer{
+    min-height: 10vh;
+}

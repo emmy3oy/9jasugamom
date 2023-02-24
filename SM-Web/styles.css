@@ -1,0 +1,349 @@
+*{
+    padding: 0rem;
+    margin: 0rem;
+    box-sizing: border-box;
+}
+
+@font-face {
+      src: url(/fronts/FrankRuhlLibre-Regular.ttf);
+    font-family:"Ruhl";
+  
+
+    font-family: "Ruhl Medium";
+    src: url(/fronts/FrankRuhlLibre-Medium.ttf);
+
+    
+    font-family: "Vibes";
+    src: url(/fronts/GreatVibes-Regular.ttf);
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        font-family: "Vibes";
+    
+    font-family: 'Vibes'; 
+    src: url(/fronts/GreatVibes-Regular.ttf);
+
+   font-family: "Mons";
+     src: url(/fronts/MonsieurLaDoulaise-Regular.ttf);
+}
+
+html{
+    font-size: 62.5%;
+    --header1: calc(2rem + 1vw);
+    --header2: calc(3.5rem + 1vw);
+    --header3: calc(3rem + 1vw);
+    --header4: calc(2.4rem + 1vw);
+    --text: calc(1.5rem + 1vw);
+    --big: calc(2.4rem + 1vw);
+    --special-color:#906272;
+    --background-color:#414141;
+    --grey-text: #525252;
+}
+h1{
+    font-size: var(--header1);
+}
+li,
+label,
+button, 
+input, 
+a,
+p{
+    font-size: 2rem;
+}
+h2{
+    font-size: var(--header2);
+}
+h3{
+    font-size: var(--header3);
+}
+h4,h5{
+    font-size: var(--header4);
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    font-family: "Vibes"
+}
+h1{
+    font-family: "Ruhl";
+}
+
+/*Nav Section*/
+
+.main-head{
+    box-shadow: 0px 10px 10px rgba(31, 29, 29, 0.1);
+    background: var(--background-color);
+}
+nav{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    min-height: 10vh;
+    padding: 2rem 0rem;
+}
+
+#logo{
+    flex: 1 1 20rem;
+    font-family: 'Vibes';
+}
+.nav-link{
+    display: flex;
+    justify-content: space-around;
+    flex: 1 1 20rem;
+}
+
+/* Hero Section */
+
+.hero{
+    min-height: 90vh;
+    width: 100%;
+    margin: 0 0 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.active{
+    background: var(--grey-text);
+    color: white;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+}
+.hero-introduction{
+    flex: 2 1 40rem;
+    text-align:left;
+    background: lightslategray;
+}
+.hero-introduction p{
+    padding: 5rem 10rem;
+}
+.hero-introduction h2, h4, h5 {
+    padding: 4rem;
+    text-align: center;
+    line-height: 40px;
+}
+.hero-introduction a {
+    background: var(--grey-text);
+    color: white;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    margin-left: 45%;    
+}
+   
+.hero-images{
+    flex: 1 1 40rem;
+}
+.hero-SM{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.write-up{
+    min-height: 70vh;
+    background: var(--background-color);
+    padding: 3rem;
+    min-height: 30vh;
+    color: wheat;
+    text-align: center;
+ }
+.write-up h2 {
+    padding: 2rem;
+}
+.cards{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    min-height: 70vh;
+    align-items: center;
+    flex-wrap:wrap;
+}
+.card{
+    flex: 1 1 25rem;
+    min-height: 40vh;
+    width: 100%;
+    margin: 2rem 5rem;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1) 0px 20px 20px,  rgba(0, 0, 0, 0.1);
+}
+.card h4{
+    padding: 1rem;
+}
+.card p{
+    color: var(--grey-text);
+}
+.card img{
+    max-width: 90%;
+    margin: 1rem;
+    
+}
+.card-icon{
+    background: var(--special-color);
+}
+
+/*Gallery */
+.gallery{
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+}
+.gallery img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    min-height: 70vh;
+    align-items: center;
+    flex-wrap:wrap;
+}
+.gallery-text{
+    min-height: 30vh;
+    background: var(--background-color);
+}
+.gallery-text button{
+    align-content: center;
+}
+.gallery-text a {
+color: rgb(121, 175, 233);
+padding-left: 20%;
+font-size: 4rem;
+}
+
+.card1{
+    flex: 1 1 25rem;
+    min-height: 40vh;
+    width: 100%;
+    margin: 2rem 5rem;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1) 0px 20px 20px,  rgba(0, 0, 0, 0.1);
+}
+
+
+/* Benefit */
+.benefit-head{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+
+/*Private Policy*/
+.private-policy{
+    background: var(--background-color);
+    min-height: 10vh;
+    align-content: space-between;
+    flex: 1 1 20rem;
+    flex-wrap: wrap;
+    }
+#contact{
+    min-height: 100vh;
+    background: url(/image/pexels-roberto-nickson-2559941.jpg);
+    background-size: cover;
+    padding-top: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Form Section */
+
+.form-wrapper{
+    background: rgba(19, 28, 0, 0.8);
+    width: 60%;
+    color: white;
+    border-radius: 20px;
+    padding-bottom: 4rem;
+    
+}
+.form-head{
+    text-align: center;
+    padding: 4rem;
+    text-align: center;
+}
+.name-form, .email-form{
+    padding: 3rem;
+    text-align: center;
+}
+.form-wrapper label{
+    margin: 0rem 3rem;
+}
+.form-wrapper button {
+    width: 100%;
+    padding: 2rem;
+    margin-top: 8rem;
+    justify-content: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.form-wrapper input{
+    padding: 1rem 3rem;
+}
+footer{
+    color: white;
+    background: var(--special-color);
+    
+}
+.footer-wrapper{
+    display: flex;
+    padding: 2rem;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    min-height: 5vh;
+}
+footer h5{
+    flex: 1 1 40rem;
+}
+.footer ul{
+    flex-direction: column;
+    list-style: none;
+    flex: 1 1 40rem;
+}
+/* Payment */
+
+.payment{
+   
+    min-height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.5), transparent),url(/image/pexels-владимир-васильев-10193441.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}  
+.payment a {
+    font-size: 4rem;
+    background: var(--grey-text);
+    color: white;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    display: inline-block;
+}
+.payment a:hover{
+    background-color: blue;
+}
+span{
+    color: #525252;
+}
+
+
+
+/* Media Section */
+@media  (max-width:400px){
+   
+nav{
+    
+}
+}
